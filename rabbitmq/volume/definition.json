@@ -1,0 +1,31 @@
+{
+ "rabbit_version": "3.9.7",
+ "users": [
+  {               
+    "name": "timeover",
+    "password_hash": "3oSAcz3Fxfpn2yebvJIB5vJJ81whUnAM9YW86ZeQ8aXWv0V/",
+    "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": "administrator"
+  }
+ ],
+ "vhosts": [
+  {
+   "name": "/"
+  }
+ ],
+ "permissions": [
+  {
+   "user": "timeover",
+   "vhost": "/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  }
+ ],
+ "parameters": [],
+ "policies": [],
+ "queues": [],
+ "exchanges": [],
+ "bindings": []
+}
+
