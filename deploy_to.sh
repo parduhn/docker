@@ -86,11 +86,11 @@ copy_file () {
     then
       log "     rsync --dry-run  -av --progress --exclude='.*' ${source} ${destination}"  
       echo "Deploy service ${service}. Server password needed."
-      rsync --dry-run -v -av --progress --exclude='.*' "${source}" "${destination}"
+      rsync --dry-run -v -av --progress --exclude='.*' ""${source}"" "${destination}"
     else 
       log "     rsync -av --progress --exclude='.*' ${source} ${destination}" 
       echo "Deploy service ${service}. Server password needed." 
-      rsync -av --progress --exclude='.*' "${source}" "${destination}"
+      rsync -av --progress --exclude='.*' ""${source}"" "${destination}"
     fi
 
     if [[ $? -eq 0 ]];
